@@ -94,6 +94,7 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "no-useless-constructor": "off"
+    "no-useless-constructor": "off",
+    "import/prefer-default-export" : "off"
   }
 }

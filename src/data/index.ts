@@ -1,11 +1,11 @@
 import { DataMessage, IRobot } from '@nodetron/types/data'
 import { Color } from '@nodetron/types/utils/utils'
 
-import Ball from './ball'
-import Field from './field'
-import Robot from './robot'
+import { Ball } from './ball'
+import { Field } from './field'
+import { Robot } from './robot'
 
-export default class Data implements DataMessage {
+export class Data implements DataMessage {
     public field: Field;
 
     public robots: {

@@ -1,7 +1,7 @@
 import { IRobot } from '@nodetron/types/data'
 import Point from '@nodetron/math/Point2D'
 
-export default class Robot implements IRobot {
+export class Robot implements IRobot {
     public id : number;
 
     public position: Point;

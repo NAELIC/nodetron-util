@@ -1,7 +1,7 @@
 import Circle from '@nodetron/math/Circle'
 import { IField, IFieldObject } from '@nodetron/types/data'
 
-export default class Field implements IField {
+export class Field implements IField {
     public length: number;
 
     public width: number;
