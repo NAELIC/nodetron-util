@@ -1,5 +1,5 @@
 import { IRobot } from '@nodetron/types/data'
-import Point from '@nodetron/math/Point2D'
+import { Point } from '@nodetron/math/Point2D'
 
 export class Robot implements IRobot {
     public id : number;

@@ -1,4 +1,4 @@
-import Circle from '@nodetron/math/Circle'
+import { Circle } from '@nodetron/math/Circle'
 import { IField, IFieldObject } from '@nodetron/types/data'
 
 export class Field implements IField {

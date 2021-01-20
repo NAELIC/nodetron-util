@@ -1,6 +1,6 @@
 {
   "name": "@nodetron/util",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1-beta.4",
   "description": "Util library for NAELIC Framework",
   "keywords": [
     "Wrapper",
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/EtienneSchmitz/nodetron-util"
+    "url": "https://github.com/NAELIC/nodetron-util"
   },
   "license": "MIT",
   "author": "NAELIC",
@@ -28,8 +28,8 @@
     }
   },
   "dependencies": {
-    "@nodetron/math": "^0.0.1-beta.4",
-    "@nodetron/types": "^0.0.1-beta.14",
+    "@nodetron/math": "^0.0.1-beta.5",
+    "@nodetron/types": "^0.0.1-beta.15",
     "fastest-validator": "^1.9.0",
     "moleculer": "^0.14.12"
   },

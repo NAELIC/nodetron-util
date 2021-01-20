@@ -1,4 +1,4 @@
-import Point from '@nodetron/math/Point2D'
+import { Point } from '@nodetron/math/Point2D'
 import { IBall } from '@nodetron/types/data'
 
 export class Ball implements IBall {
