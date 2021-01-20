@@ -1,4 +1,4 @@
-import DataMessage, { IRobot } from '@nodetron/types/data'
+import { DataMessage, IRobot } from '@nodetron/types/data'
 import { Color } from '@nodetron/types/utils/utils'
 
 import Ball from './ball'

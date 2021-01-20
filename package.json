@@ -1,6 +1,6 @@
 {
   "name": "@nodetron/util",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "description": "Util library for NAELIC Framework",
   "keywords": [
     "Wrapper",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nodetron/math": "^0.0.1-beta.4",
-    "@nodetron/types": "^0.0.1-beta.13",
+    "@nodetron/types": "^0.0.1-beta.14",
     "fastest-validator": "^1.9.0",
     "moleculer": "^0.14.12"
   },
