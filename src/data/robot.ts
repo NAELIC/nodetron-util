@@ -1,5 +1,6 @@
 import { IRobot } from '@nodetron/types/data'
 import { Point } from '@nodetron/math/Point2D'
+import { Kick } from '@nodetron/types/data/enum'
 
 export class Robot implements IRobot {
     public id : number;
@@ -10,10 +11,7 @@ export class Robot implements IRobot {
 
     public infrared: boolean;
 
-    public kick: {
-      flat: boolean,
-      chip: boolean,
-    };
+    public kick: Kick;
 
     public radius: number;
 

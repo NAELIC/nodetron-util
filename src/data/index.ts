@@ -1,5 +1,5 @@
 import { DataMessage, IRobot } from '@nodetron/types/data'
-import { Color } from '@nodetron/types/utils/utils'
+import { Color } from '@nodetron/types/data/enum'
 
 import { Ball } from './ball'
 import { Field } from './field'
