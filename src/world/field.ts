@@ -1,7 +1,7 @@
 import { Circle } from '@nodetron/math/Circle'
-import { IField, IFieldObject } from '@nodetron/types/data'
+import { AbstractField, AbstractFieldPart } from '@nodetron/types/world'
 
-export class Field implements IField {
+export class Field implements AbstractField {
     public length: number;
 
     public width: number;
@@ -10,11 +10,11 @@ export class Field implements IField {
 
     public centerMark: Circle;
 
-    public goal: IFieldObject;
+    public goal: AbstractFieldPart;
 
-    public penalty: IFieldObject;
+    public penalty: AbstractFieldPart;
 
-    public constructor(field: IField) {
+    public constructor(field: AbstractField) {
       this.length = field.length
       this.width = field.width
       this.boundaryWidth = field.boundaryWidth

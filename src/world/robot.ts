@@ -1,8 +1,8 @@
-import { IRobot } from '@nodetron/types/data'
+import { AbstractRobot } from '@nodetron/types/world'
 import { Point } from '@nodetron/math/Point2D'
-import { Kick } from '@nodetron/types/data/enum'
+import { Kick } from '@nodetron/types/enum'
 
-export class Robot implements IRobot {
+export class Robot implements AbstractRobot {
     public id : number;
 
     public position: Point;
@@ -15,7 +15,7 @@ export class Robot implements IRobot {
 
     public radius: number;
 
-    constructor(robot: IRobot) {
+    constructor(robot: AbstractRobot) {
       this.id = robot.id
       this.position = new Point(robot.position.x,
         robot.position.y)

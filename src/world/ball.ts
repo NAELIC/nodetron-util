@@ -1,12 +1,12 @@
 import { Point } from '@nodetron/math/Point2D'
-import { IBall } from '@nodetron/types/data'
+import { AbstractBall } from '@nodetron/types/world'
 
-export class Ball implements IBall {
+export class Ball implements AbstractBall {
     public position: Point;
 
     public radius : number;
 
-    constructor(ball : IBall) {
+    constructor(ball : AbstractBall) {
       this.position = new Point(ball.position.x,
         ball.position.y)
       this.radius = ball.radius

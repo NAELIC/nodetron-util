@@ -1,11 +1,11 @@
-import { DataMessage, IRobot } from '@nodetron/types/data'
-import { Color } from '@nodetron/types/data/enum'
+import { WorldMessage } from '@nodetron/types/world'
+import { Color } from '@nodetron/types/enum'
 
 import { Ball } from './ball'
 import { Field } from './field'
 import { Robot } from './robot'
 
-export class Data implements DataMessage {
+export class World implements WorldMessage {
     public field: Field;
 
     public robots: {
@@ -20,14 +20,14 @@ export class Data implements DataMessage {
 
     public color: Color;
 
-    constructor(data: DataMessage) {
+    constructor(data: WorldMessage) {
       this.field = new Field(data.field)
 
-      data.robots.allies.forEach((robot : IRobot) => {
+      data.robots.allies.forEach((robot) => {
         this.robots.allies[robot.id] = new Robot(robot)
       })
 
-      data.robots.opponents.forEach((robot : IRobot) => {
+      data.robots.opponents.forEach((robot) => {
         this.robots.opponents[robot.id] = new Robot(robot)
       })
 
