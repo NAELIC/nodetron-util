@@ -20,19 +20,19 @@ export class World implements WorldMessage {
 
     public color: Color;
 
-    constructor(data: WorldMessage) {
-      this.field = new Field(data.field)
+    constructor(world: WorldMessage) {
+      this.field = new Field(world.field)
 
-      data.robots.allies.forEach((robot) => {
+      world.robots.allies.forEach((robot) => {
         this.robots.allies[robot.id] = new Robot(robot)
       })
 
-      data.robots.opponents.forEach((robot) => {
+      world.robots.opponents.forEach((robot) => {
         this.robots.opponents[robot.id] = new Robot(robot)
       })
 
-      this.ball = new Ball(data.ball)
+      this.ball = new Ball(world.ball)
 
-      this.color = data.color
+      this.color = world.color
     }
 }
