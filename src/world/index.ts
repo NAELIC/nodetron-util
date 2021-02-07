@@ -1,5 +1,6 @@
 import { WorldMessage } from '@nodetron/types/world'
 import { Color } from '@nodetron/types/enum'
+import { GameControllerEvent } from '@nodetron/types/network/game-controller'
 
 import { Ball } from './ball'
 import { Field } from './field'
@@ -20,6 +21,8 @@ export class World implements WorldMessage {
 
     public color: Color;
 
+    public gameController: GameControllerEvent;
+
     constructor(world: WorldMessage) {
       this.field = new Field(world.field)
 
@@ -34,5 +37,6 @@ export class World implements WorldMessage {
       this.ball = new Ball(world.ball)
 
       this.color = world.color
+      this.gameController = world.gameController
     }
 }
