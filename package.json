@@ -28,15 +28,15 @@
     }
   },
   "dependencies": {
-    "@nodetron/math": "^0.0.1-beta.6",
+    "@nodetron/math": "^0.0.1-beta.7",
     "@nodetron/types": "^0.0.1-beta.20",
-    "fastest-validator": "^1.9.0",
+    "fastest-validator": "^1.10.0",
     "moleculer": "^0.14.12"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@types/node": "^14.14.22",
+    "@types/node": "^14.14.25",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "commitizen": "^4.2.3",
