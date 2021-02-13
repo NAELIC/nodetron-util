@@ -1,4 +1,4 @@
-import { Point } from '@nodetron/math/Point2D'
+import { Point } from '@nodetron/math/point2D'
 import { AbstractBall } from '@nodetron/types/world'
 
 export class Ball implements AbstractBall {

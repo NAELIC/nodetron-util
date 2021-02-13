@@ -1,4 +1,4 @@
-import { Circle } from '@nodetron/math/Circle'
+import { Circle } from '@nodetron/math/circle'
 import { AbstractField, AbstractFieldPart } from '@nodetron/types/world'
 
 export class Field implements AbstractField {

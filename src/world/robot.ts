@@ -1,5 +1,5 @@
 import { AbstractRobot } from '@nodetron/types/world'
-import { Point } from '@nodetron/math/Point2D'
+import { Point } from '@nodetron/math/point2D'
 import { Kick } from '@nodetron/types/enum'
 
 export class Robot implements AbstractRobot {
